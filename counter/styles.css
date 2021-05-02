@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap');
+
+/* Variables */
+:root {
+  --primary: 'Roboto', sans-serif;
+  --secondary: 'Open Sans', sans-serif;
+  --grey1: hsl(209, 61%, 16%);
+  --grey2: hsl(210, 22%, 49%);
+  --grey3: hsl(210, 36%, 96%);
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+}
+
+/*Global Styles*/
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--secondary);
+  background: lightblue;
+  color: black;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+h1 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  font-size: 3rem;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--primary);
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+    line-height: 1;
+  }
+  body {
+    font-size: 1rem;
+  }
+}
+
+/*Counter*/
+.counter {
+  text-align: center;
+}
+.countval {
+  font-size: 6rem;
+  font-weight: bold;
+  color: black;
+}
+.btn {
+  text-transform: uppercase;
+  background: transparent;
+  color: #222;
+  padding: 0.375rem 0.75rem;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  transition: var(--transition);
+  font-size: 0.875rem;
+  border: 2px solid #222;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius);
+  margin: 0.75rem;
+  margin-top: 2rem;
+}
+.btn:hover {
+  color: #fff;
+  background: #222;
+}
