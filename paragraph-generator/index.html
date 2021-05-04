@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paragraph Generator</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <section class="section-center">
+      <h4>generate paragraphs!</h4>
+      <form class="form">
+        <label for="paragraph">No.of Paragraphs: </label>
+        <input
+          type="number"
+          min="1"
+          max="9"
+          name="paragraph"
+          id="paragraph"
+          placeholder="eg. 2"
+        />
+        <button type="submit" class="btn">generate!</button>
+      </form>
+      <article class="text"></article>
+    </section>
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
